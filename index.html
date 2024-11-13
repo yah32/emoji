@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekspresi Diri</title>
+    <style>
+        body {
+            font-family: Poppins, Times, serif, sans-serif;
+            text-align: center;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            margin-top: 350px;
+        }
+        h1 {
+            color: #ffffff;
+        }
+        form {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 15px;
+            margin: 5px;
+            width: 200px;
+        }
+        .button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .button:hover {
+            background-color: #ff8787;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ekspresikan Diri Kamu</h1>
+        <form action="process.php" method="post">
+            <input type="text" name="name" placeholder="Nama Kamu" required><br>
+            <input type="text" name="expression" placeholder="Suasana Hati Kamu" required><br>
+            <input type="submit" value="Tampilkan Ekspresi" class="button">
+        </form>
+    </div>
+    <footer>
+        <p>Created by Ni Kadek Intan Rahayu</p>
+    </footer>
+</body>
+</html>
